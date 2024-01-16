@@ -12,6 +12,6 @@ test:
   database: mbeurr_test
   pool: 5
   timeout: 5000
-  host: db
+  host: 127.0.0.1
   password: password
   username: root
