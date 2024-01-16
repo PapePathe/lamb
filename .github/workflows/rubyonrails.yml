@@ -1,0 +1,56 @@
+name: "Ruby on Rails CI"
+on:
+  push:
+    branches: ["master"]
+  pull_request:
+    branches: ["master"]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        ruby: ['2.0']
+    services:
+      registry:
+        image: registry:2
+        ports:
+          - 5000:5000
+      mysql:
+        image: mysql:5.7
+        env:
+          MYSQL_ROOT_PASSWORD: password
+          MYSQL_DATABASE: mbeurr_test
+        ports:
+          - 3306:3306
+        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
+    env:
+      RAILS_ENV: test
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+        with:
+          driver-opts: network=host
+      - name: Build and push to local registry
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: true
+          tags: localhost:5000/ndefleng:latest
+      - name: Inspect
+        run: |
+          docker buildx imagetools inspect localhost:5000/ndefleng:latest
+      - name: Database Setup
+        run: |
+          docker ps
+          docker run localhost:5000/ndefleng:latest bundle exec rake db:create db:schema:load
+      - name: Rspec
+        run: |
+          docker run localhost:5000/ndefleng:latest bundle exec rspec
+      - name: Cucumber
+        run: |
+          docker run localhost:5000/ndefleng:latest bundle exec rake cucumber

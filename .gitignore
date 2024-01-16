@@ -2,8 +2,6 @@
 .directory
 .idea
 db/*.sqlite3
-db/schema.*
-config/database.yml
 log/*.log
 tmp/
 doc/
