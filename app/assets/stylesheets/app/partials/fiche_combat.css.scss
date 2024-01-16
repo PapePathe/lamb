@@ -1,57 +1,56 @@
 @mixin shadowed-box {
 
-  box-shadow: 0.2px 1px 8px #000;
-  -moz-box-shadow: 0.2px 1px 8px #000;
-  -webkit-box-shadow: 0.2px 1px 8px #000;
+	box-shadow: 0.2px 1px 8px #000;
+	-moz-box-shadow: 0.2px 1px 8px #000;
+	-webkit-box-shadow: 0.2px 1px 8px #000;
 }
 
 .fiche_combat {
 
-    text-align: center;
-	
+	text-align: center;
+
 	background: #444444;
 	width: 100%;
-	
+
 	li {
-		
+
 		h3 {
-			
-			a { 
+
+			a {
 				color: #FDD017;
-				text-transform: uppercase; 
+				text-transform: uppercase;
 			}
+
 			a:hover {
 				color: #222;
 			}
-			
-		
+
+
 		}
-						
+
 		img {
-          @include shadowed-box;
+			@include shadowed-box;
 		}
-		
+
 		img:hover {
 			opacity: .6;
 		}
-		
+
 		h4 {
 			color: #FFF2CE;
 		}
-		
+
 		table {
 			font-size: 11px;
 			background: #FFF2CE;
-			
+
 			td {
-				text-align: center;	
+				text-align: center;
 			}
-						
+
 
 		}
-		
+
 	}
-	
+
 }
-
-

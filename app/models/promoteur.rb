@@ -9,24 +9,21 @@
 #
 
 class Promoteur < ActiveRecord::Base
-  
   # Validations
   #
-  validates :nom, :presence => true, :uniqueness => true 
-  
+  validates :nom, :presence => true, :uniqueness => true
+
   # => Associations
   #
-    # => Galas
-    has_many :galas
-  
-    # => Tournois
-    has_many :tournois
-  
-  
+  # => Galas
+  has_many :galas
+
+  # => Tournois
+  has_many :tournois
+
   # Override to_s
   #
   def to_s
     nom
   end
-  
 end

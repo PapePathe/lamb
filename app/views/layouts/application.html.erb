@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html>
-	
+
 	<head>
-	
+
 	  <title>Ndefleng</title>
-	  
+
 	  <%= stylesheet_link_tag "application", "controllers/#{params[:controller]}/#{params[:action]}" %>
-	  
+
 	  <!-- -><link href='http://fonts.googleapis.com/css?family=Orbitron:400,500,700,900' rel='stylesheet' type='text/css'><!-->
-	  
+
 	  <%= csrf_meta_tags %>
-	  
+
 	  <%= javascript_include_tag "application", "controllers/#{params[:controller]}/#{params[:action]}" %>
-	  
+
 	</head>
-	
+
 	<body>
-				
+
 		<%= render 'menu/top_menu' %>
-		
+
 		<header>
-			
+
 			<div class="container">
 				<% flash.each do |key, msg| %>
                   <br />
@@ -31,39 +31,39 @@
                   <%- end %>
 			    <% end %>
 			</div>
-			
+
 			<%= yield :grands_combats %>
-			
+
 			<div class="container">
-				
+
 				<section>
-					<%= yield :topbar %>					
+					<%= yield :topbar %>
 				</section>
-									
+
 			</div>
-			
+
 		</header>
 
 		<div class="container">
-			
+
 		    <div class="content">
-		      
+
 				<%= yield %>
-				
+
 			</div>
-			
-		</div>	
-	
+
+		</div>
+
 		<footer>
-			
-			<div class="container">	
-							
+
+			<div class="container">
+
 				<div class="row">
-					
+
 					<div class="span4">
 						<%= image_tag 'ndefleng.png', :alt => "ndefleng", :title => "ndefleng" %>
 					</div>
-					
+
 					<div class="span2">
 						<h4>Ndefleng</h4>
 						<ul class="unstyled">
@@ -72,7 +72,7 @@
 							<li><%= link_to raw('&raquo; promoteurs'), promoteurs_path %></li>
 						</ul>
 					</div>
-					
+
 					<div class="span2">
 						<h4>Compétitions</h4>
 						<ul class="unstyled">
@@ -81,7 +81,7 @@
 							<li><a href="#">&raquo; calendrier complet</a></li>
 						</ul>
 					</div>
-					
+
 					<div class="span2">
 					  <h4>Amateurs</h4>
 					  <ul class="unstyled">
@@ -90,7 +90,7 @@
 					    <li><%= link_to raw('&raquo; réseau social'), users_path, :title => 'réseau social des amateurs de lutte au sénégal'  %></li>
 					  </ul>
 					</div>
-					
+
 					<div class="span2">
 					  <h4>CNG de lutte</h4>
 					  <ul class="unstyled">
@@ -100,26 +100,26 @@
 					  </ul>
 					</div>
 				</div>
-				
+
 			</div>
-			
+
 		</footer>
-		
+
 		<div>
-			<div class="container">	
-							
+			<div class="container">
+
 				<div class="row">
 					<div class="span3">
 						<%= image_tag 'text.png' %>
 					</div>
 					<div class="span6">
-					<p>Ndefleng&trade; est un système d'information sportif pour la lutte sénégalaise développé par Xarala&trade;. Ndefleng&trade;, le logo et dérivés Ndefleng&trade;  sont la propriété exclusive de Xarala&trade;.</p>		
+					<p>Ndefleng&trade; est un système d'information sportif pour la lutte sénégalaise développé par Xarala&trade;. Ndefleng&trade;, le logo et dérivés Ndefleng&trade;  sont la propriété exclusive de Xarala&trade;.</p>
 					</div>
 					<div class="span3 xarala">
 						&copy; 2009 - <%= Date.today.year %> <%= image_tag 'xarala-ssii.jpg' %>
 					</div>
 				</div>
-				
+
 			</div>
 		</div>
 
@@ -135,5 +135,5 @@
         </div>
 
 	</body>
-	
+
 </html>

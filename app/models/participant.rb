@@ -10,8 +10,6 @@
 #
 
 class Participant < ActiveRecord::Base
-
-
   # Validations
   validates :tournoi_id, presence: true, numericality: true
   validates :lutteur_id, presence: true, numericality: true
@@ -19,6 +17,4 @@ class Participant < ActiveRecord::Base
   # Associations
   belongs_to :lutteur
   belongs_to :tournoi
-
-
 end

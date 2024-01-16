@@ -1,21 +1,24 @@
-@mixin display-block-text-align-center { display: block; text-align: center; }
+@mixin display-block-text-align-center {
+  display: block;
+  text-align: center;
+}
 
 /*.date-combat {
-  
+
   .day {
       @include display-block-text-align-center;
   }
-  
+
   .month {
       @include display-block-text-align-center;
-    
+
   }
-  
+
   .year {
       @include display-block-text-align-center;
-    
+
   }
-  
+
 }*/
 
 h1 {
@@ -25,7 +28,7 @@ h1 {
   text-align: center;
 }
 
-table  {
+table {
 
   text-transform: lowercase;
 
@@ -50,8 +53,9 @@ table  {
 .highcharts-container {
   left: 70px !important;
 }
+
 @-moz-document url-prefix() {
   .highcharts-container {
-     overflow: visible !important;
+    overflow: visible !important;
   }
 }

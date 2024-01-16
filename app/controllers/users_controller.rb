@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-
   def index
     @users = User.limit(36)
   end
@@ -12,7 +11,6 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-
   def create
     @user = User.new(params[:user])
     if @user.save
@@ -20,7 +18,6 @@ class UsersController < ApplicationController
       redirect_to root_url
     else
       render :new
-    end    
+    end
   end
-  
 end

@@ -13,39 +13,35 @@
 #
 
 class Tournoi < ActiveRecord::Base
-  
   # => Validations
-    
-    # => Title
-    # presence
-    # uniqueness
-    validates :title, presence: true, uniqueness: true
-    
-    # => ShortTitle
-    # presence
-    # length
-    validates :short_title, presence: true
-    
-    # => Description
-    # presence
-    validates :description, presence: true
-    
-    # => PromoteurId
-    # presence
-    # numericality
-    validates :promoteur_id, presence: true, numericality: true
-    
-    
-  # => Associations
-  
-    # => Promoteur
-    belongs_to :promoteur 
-    
-    # => Participants
-    has_many :participants
+  # => Title
+  # presence
+  # uniqueness
+  validates :title, presence: true, uniqueness: true
 
-    # => Lutteurs
-    has_many :lutteurs, :through => :participants
-  
-  
+  # => ShortTitle
+  # presence
+  # length
+  validates :short_title, presence: true
+
+  # => Description
+  # presence
+  validates :description, presence: true
+
+  # => PromoteurId
+  # presence
+  # numericality
+  validates :promoteur_id, presence: true, numericality: true
+
+
+  # => Associations
+
+  # => Promoteur
+  belongs_to :promoteur
+
+  # => Participants
+  has_many :participants
+
+  # => Lutteurs
+  has_many :lutteurs, :through => :participants
 end

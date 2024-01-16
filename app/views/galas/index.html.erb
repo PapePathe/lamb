@@ -1,41 +1,39 @@
 <h1 class="page-title-hidden">ndefleng - galas de lutte au sénégal</h1>
 <% content_for :grands_combats do %>
 	<div class="container">
-				
 		<ul id='incoming-galas' class="jcarousel-skin-tango">
-			
 			<% @incoming.order(:occurs_at).each do |gala| %>
 				<li class="gala">
-					
+
 				  <div class="line">
 				  	<div class="unit size1of2">
 				  		<h2><%= gala.nom %></h2>
-				  		<p class="promoteur"> 
-				  			<b>organisé par: <%= gala.promoteur %></b> 
+				  		<p class="promoteur">
+				  			<b>organisé par: <%= gala.promoteur %></b>
 				  			<br />
 				  			<% if gala.occurs_at > Date.today %>
 				  				aura lieu le
 				  			<% else %>
 				  				le
-				  			<% end %> 
-				  			<%= l gala.occurs_at, :format => :date_gala %></p>						
+				  			<% end %>
+				  			<%= l gala.occurs_at, :format => :date_gala %></p>
 				  	</div>
 				  	<div class="unit size1of2 lastUnit">
 				  		<div class="gala-countdown">
 				  			<h3 class="gala-<%= gala.id %>-countdown"> COMPTE À REBOURS GALA <%= gala %> </h3>
 							<script type="text/javascript">
-								jQuery(document).ready(function(){	
+								jQuery(document).ready(function(){
 								  var austDay = new Date(<%=gala.occurs_at.year %>, <%= (gala.occurs_at.month - 1) %>, <%=gala.occurs_at.day %>);
-								  jQuery('.gala-<%= gala.id %>-countdown').countdown({until: austDay,  format: 'ODHMS'});								  
+								  jQuery('.gala-<%= gala.id %>-countdown').countdown({until: austDay,  format: 'ODHMS'});
 								});
 							</script>
-				  		</div>												
+				  		</div>
 				  	</div>
 				  </div>
 				  <% if gala.combats.count > 0 %>
-				  
+
 				  	  <% grand_combat = gala.combats.grand_combat %>
-				  	
+
 					  <div class="line">
 					  	<div class="unit size1of2">
 							<% unless grand_combat.nil? %>
@@ -44,14 +42,14 @@
 						  			<div class="unit size1of2">
 						  				<div class="champion"><%= image_tag "http://placehold.it/200x220&text=#{grand_combat.champion}" %></div>
 						  			</div>
-						  			<div class="unit size1of2">	
-						  				<div class="challenger"><%= image_tag "http://placehold.it/200x220&text=#{grand_combat.challenger}" %>					  					
+						  			<div class="unit size1of2">
+						  				<div class="challenger"><%= image_tag "http://placehold.it/200x220&text=#{grand_combat.challenger}" %>
 						  				</div>
 						  			</div>
 						  			<h4 class="contre"><%= link_to grand_combat.titre, gala, :title => gala %></h4>
 						  		</div>
 					  		</div>
-					  		<% end %>					
+					  		<% end %>
 					  	</div>
 					  	<div class="unit size1of2 lastUnit">
 							<ul class="unstyled combats-secondaires">
@@ -65,14 +63,13 @@
 							</ul>
 					  	</div>
 					  </div>
-					  
+
 				  <% end %>
-				  
+
 				  <br />
-				  
+
 				</li>
 			<% end %>
-			
-		</ul>	
+		</ul>
 	</div>
 <% end %>

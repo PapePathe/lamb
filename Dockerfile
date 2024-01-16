@@ -5,7 +5,7 @@ RUN apt-get update -qq && apt-get install -f -y libmysqlclient-dev
 WORKDIR /myapp
 COPY Gemfile /myapp/Gemfile
 COPY Gemfile.lock /myapp/Gemfile.lock
-RUN bundle install --jobs 8 --verbose
+RUN bundle install --jobs 4 --verbose
 COPY . .
 
 EXPOSE 3000

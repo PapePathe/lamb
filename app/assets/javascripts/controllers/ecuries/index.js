@@ -2,6 +2,6 @@
  * = require jquery.tablesorter/jquery.tablesorter
  */
 
-jQuery(function() {
+jQuery(function () {
 	jQuery("table").tablesorter();
 });

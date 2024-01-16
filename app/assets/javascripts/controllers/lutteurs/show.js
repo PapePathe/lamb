@@ -3,16 +3,16 @@
 //= require highcharts/highcharts.gray
 //
 
-jQuery(document).ready( function() {
+jQuery(document).ready(function () {
 
-  jQuery("a[data-toggle=modal]").on("click", function(){
+  jQuery("a[data-toggle=modal]").on("click", function () {
 
     // jQuery(this).preventDefault();
 
-     var container =  jQuery(this).attr('data-target');
-     var href      =  jQuery(this).attr('href');
+    var container = jQuery(this).attr('data-target');
+    var href = jQuery(this).attr('href');
 
-     jQuery(container+' .modal-body').load(href, {format: 'js', type: 'GET'});
+    jQuery(container + ' .modal-body').load(href, {format: 'js', type: 'GET'});
 
   });
 

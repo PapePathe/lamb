@@ -14,33 +14,25 @@
 #
 
 class User < ActiveRecord::Base
-  
   # Auth config
   authenticates_with_sorcery!
-  
+
   attr_accessible :email, :password, :password_confirmation, :nom_complet
-  
+
   # Validations
   #
   validates_confirmation_of :password
-  
-  
   validates :email, :presence => true, :uniqueness => true
-  
   validates :nom_complet, :presence => true
-  
-  
   validates_presence_of :password, :on => :create
-  
+
   # => Scopes
   #
   scope :nouveaux, limit(10).order('rand()')
-
 
   # instance methods
 
   def to_s
     nom_complet
   end
-
 end

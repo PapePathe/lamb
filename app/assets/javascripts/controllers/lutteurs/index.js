@@ -5,14 +5,13 @@
  */
 
 jQuery(document).ready(
-  function() 
-  {
+  function () {
     jQuery('#lutteurs-vips').jcarousel
-    (
-      {
-        visible: 2,
-        scroll: 1
-      }
-    );
-  } 
+      (
+        {
+          visible: 2,
+          scroll: 1
+        }
+      );
+  }
 );

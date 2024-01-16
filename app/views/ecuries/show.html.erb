@@ -1,19 +1,18 @@
 <% if @lutteurs.featured.count > 0 %>
+	<ul id='featured-lutteurs' class="jcarousel-skin-tango">
 
-<ul id='featured-lutteurs' class="jcarousel-skin-tango">
-	
-	<% @lutteurs.featured.each do |lutteur|  %>
-		<li>
-			<%= link_to lutteur, :title => lutteur do %>
-				<%= image_tag 'http://placehold.it/190x202/222/FDD017/&text=photo du lutteur', :alt => lutteur, :title => lutteur %>
-			<% end %>				
-			<h2><%= link_to lutteur.surnom, lutteur, :title => lutteur %></h2>			
-		</li>
-	<% end %>
-	
-</ul>
-<br />
-		
+		<% @lutteurs.featured.each do |lutteur|  %>
+			<li>
+				<%= link_to lutteur, :title => lutteur do %>
+					<%= image_tag 'http://placehold.it/190x202/222/FDD017/&text=photo du lutteur', :alt => lutteur, :title => lutteur %>
+				<% end %>
+				<h2><%= link_to lutteur.surnom, lutteur, :title => lutteur %></h2>
+			</li>
+		<% end %>
+
+	</ul>
+	<br />
+
 <% end %>
 
 <hr class="faded" />
@@ -24,41 +23,41 @@
 	<div class="span8">
 
 		<% if @lutteurs.not_featured.count > 0 %>
-		<br />
-		<table class="table table-bordered table-condensed">
-			
-			<thead>
-				<tr>
-					<th class='green'>lutteur</th>
-					<th class='green'>age</th>
-					<th class='yellow'>poids</th>
-					<th class='yellow'>taille</th>
-				</tr>
-			</thead>
-			
-			<tbody>
-				
-				<% @lutteurs.not_featured.each do |lutteur|  %>
+			<br />
+			<table class="table table-bordered table-condensed">
+
+				<thead>
 					<tr>
-						<td class="line lutteur-summary" width='70%'>
-							<div  class="media-grid unit size1of4 ">
-								<%= link_to lutteur, :title => lutteur do %>
-									<img src="http://placehold.it/48x48" class="thumbnail">
-								<% end %>						
-							</div>
-							<h2 class="unit size3of4 lastUnit"><%= link_to lutteur.surnom, lutteur, :title => lutteur  %></h2>
-						</td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>			
-				<% end %>
-				
-			</tbody>
-			
-		</table>
+						<th class='green'>lutteur</th>
+						<th class='green'>age</th>
+						<th class='yellow'>poids</th>
+						<th class='yellow'>taille</th>
+					</tr>
+				</thead>
+
+				<tbody>
+
+					<% @lutteurs.not_featured.each do |lutteur|  %>
+						<tr>
+							<td class="line lutteur-summary" width='70%'>
+								<div  class="media-grid unit size1of4 ">
+									<%= link_to lutteur, :title => lutteur do %>
+										<img src="http://placehold.it/48x48" class="thumbnail">
+									<% end %>
+								</div>
+								<h2 class="unit size3of4 lastUnit"><%= link_to lutteur.surnom, lutteur, :title => lutteur  %></h2>
+							</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					<% end %>
+
+				</tbody>
+
+			</table>
 		<% end %>
-		
+
 	</div>
 	<div class="span4">
 		<h3>Prochains combats</h3>

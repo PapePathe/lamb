@@ -2,15 +2,15 @@
 <% if @gala.occurs_at > Time.now -%>
  <% if (@gala.occurs_at - Time.now) > 1.month  -%>
    <% format = "ODHMS" -%>
-  <% else %>    
+  <% else %>
    <% format = "DHMS" -%>
  <% end -%>
 <div class="gala-countdown">
   <h3 id="gala-countdown"> COMPTE À REBOURS GALA <%= @gala %> </h3>
   <script type="text/javascript">
-	  jQuery(document).ready(function(){	
+	  jQuery(document).ready(function(){
 	    var austDay = new Date(<%=@gala.occurs_at.year %>, <%= (@gala.occurs_at.month - 1) %>, <%=@gala.occurs_at.day %>);
-	    jQuery('#gala-countdown').countdown({until: austDay,  format: "<%= format %>"});								  
+	    jQuery('#gala-countdown').countdown({until: austDay,  format: "<%= format %>"});
 	  });
   </script>
 </div>
@@ -25,10 +25,10 @@
 <hr class="faded" />
 
 <div class="gala">
-	
+
 	<%= render :partial => 'fiche_combat', :locals =>  { :combat => @gala.combats.grand_combat, :view => false } %>
 
-	
+
 	<hr class="faded" />
 	<div class="combats-secondaires">
 		<% @gala.combats.others.each do |combat| %>
@@ -42,7 +42,7 @@
 			<hr class="faded" />
 		<% end %>
 	</div>
-	
+
 </div>
 
 

@@ -8,8 +8,6 @@
 #
 
 class LutteurPrefere < ActiveRecord::Base
-
-
   # Validations
   validates :lutteur_id, presence: true, numericality: true
   validates :amateur_id, presence: true, numericality: true
@@ -17,5 +15,4 @@ class LutteurPrefere < ActiveRecord::Base
   # Associations
   belongs_to :lutteur
   belongs_to :amateur, class_name: User, foreign_key: 'amateur_id'
-
 end

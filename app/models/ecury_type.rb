@@ -9,21 +9,19 @@
 #
 
 class EcuryType < ActiveRecord::Base
-  
   # Mass Assignment
   attr_accessible :titre
-  
+
   # Validations
   validates :titre, :presence => true, :uniqueness => true
-  
+
   # Associations
   has_many :ecuries
-  
+
   # Instance methods
-  
+
   # overrides to string
   def to_s
     titre
   end
-  
 end

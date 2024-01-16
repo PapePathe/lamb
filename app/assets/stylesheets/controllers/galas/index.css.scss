@@ -4,71 +4,73 @@
  */
 
 #incoming-galas {
-  
+
   .combats-secondaires {
-    
+
     text-align: center;
     text-transform: uppercase;
     width: 440px;
-    
-    
-    
-    li {             
-      
+
+
+
+    li {
+
       border-bottom: 1px dotted #222;
       margin-bottom: 10px;
-      
+
       a {
         color: #222;
       }
-      
+
       a:hover {
         text-decoration: none;
         color: yellow;
       }
-      
-      
+
+
     }
-    
+
     hr {
       margin: 5px 0;
     }
-    
+
   }
-  
+
   .gala {
     padding-left: 10px;
     padding-right: 10px;
-    
-    h2, h3 {
+
+    h2,
+    h3 {
       color: #fff;
       text-transform: uppercase;
     }
-    
+
     .promoteur {
       color: #222;
-      
+
       b {
         text-transform: uppercase;
       }
-      
+
     }
-    
+
     .gala-countdown {
       margin-right: 10px;
     }
-    
+
     .grand-combat {
       background: #222;
       border: 1px inset #000;
       margin-right: 10px;
-      text-align: center;   
-      position: relative; 
-            
-      .champion, .challenger {
+      text-align: center;
+      position: relative;
+
+      .champion,
+      .challenger {
         padding: 10px;
       }
-           
+
       .contre {
         background: #222;
         padding: 5px;
@@ -78,33 +80,33 @@
         border-left: 1px solid #444;
         border-right: 1px solid #444;
         text-transform: uppercase;
-        
+
         a {
           color: #FDD017;
         }
-        
+
         a:hover {
           color: #7A2431;
         }
-        
+
       }
-      
-      
+
+
     }
-    
-    
-    
-    
+
+
+
+
   }
-  
+
 }
 
 
 .gala {
-  
+
   .grand-combat-full {
     text-align: center;
-    
+
     img {
       padding: 5px;
       border: 1px solid #ccc;
@@ -112,13 +114,14 @@
       -moz-border-radius: 5px;
       -webkit-border-radius: 5px;
     }
-    
+
   }
-  
-  thead tr th, tbody tr td {
+
+  thead tr th,
+  tbody tr td {
     text-align: center;
   }
-  
+
   h2 {
     color: #7A2431;
     font-size: 15px;
@@ -127,9 +130,10 @@
 }
 
 
-  a.promoteur {
-    font-weight: bold; 
-  }
-  a.promoteur:hover {
-    color: #222;
-  }
+a.promoteur {
+  font-weight: bold;
+}
+
+a.promoteur:hover {
+  color: #222;
+}
