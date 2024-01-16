@@ -1,7 +1,6 @@
 ActiveAdmin.register Gala do
-
   menu :parent => "Promoteurs"
-  
+
   index do
 
     column :nom do |gala|
@@ -10,13 +9,12 @@ ActiveAdmin.register Gala do
     column :occurs_at
     column :promoteur, :sortable => false
     column :featured
-    
+
     default_actions
-    
+
     #filter :promoteur_id
-    
+
   end
-  
+
   filter :nom
-  
 end

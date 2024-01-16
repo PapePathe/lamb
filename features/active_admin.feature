@@ -3,8 +3,6 @@ Feature: Administer Ndefleng Items
   As a adminstrator
   I want to  access ActiveAdmin interfaces
 
-  
   Scenario: See the admin homepage
     When I go to the admin page
     Then I should see "Ndefleng"
-  

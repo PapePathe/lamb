@@ -10,28 +10,28 @@ module NavigationHelpers
 
     when /^the home\s?page$/
       '/'
-      
+
     when /^the ndefleng home page$/
       root_path
-    
+
     when /^the promoteurs page$/
-      promoteurs_path  
-    
+      promoteurs_path
+
 
     when /^the list of ecuries$/
-      ecuries_path      
-      
+      ecuries_path
+
     when /^the admin page$/
-     admin_dashboard_path      
+     admin_dashboard_path
 
     when /^the lutteurs page$/
-      lutteurs_path     
+      lutteurs_path
     when /^devenir membre$/
       new_user_path
 
     when /^login page$/
-      new_session_path      
-     
+      new_session_path
+
     when /^the galas page$/
       galas_path
 
@@ -40,7 +40,7 @@ module NavigationHelpers
 
     when /^the amateurs page$/
       users_path
-      
+
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #

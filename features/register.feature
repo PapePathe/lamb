@@ -1,6 +1,6 @@
 Feature: Register amateurs
-	In order to allow amateurs to register in ndefleng 
-	
+	In order to allow amateurs to register in ndefleng
+
 	Scenario: Register a new amateur
     	Given I am on the ndefleng home page
     	When I go to devenir membre
@@ -10,4 +10,3 @@ Feature: Register amateurs
     	And I fill in "user[password_confirmation]" with "xarala@xarala.sn"
     	And I press "terminer"
     	And I should see "votre compte a ete cree"
-    	

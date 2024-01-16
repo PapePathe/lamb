@@ -1,5 +1,4 @@
 ActiveAdmin.register Combat do
-
   menu :parent => "Promoteurs"
 
   index do
@@ -11,14 +10,13 @@ ActiveAdmin.register Combat do
     column :featured
     column :grand_combat
   end
-  
+
   show do
     render :partial => 'show'
   end
 
   filter :occurs_at
   filter :grand_combat
-  
+
   form :partial => 'form'
-  
 end
