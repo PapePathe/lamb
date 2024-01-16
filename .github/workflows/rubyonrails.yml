@@ -46,6 +46,7 @@ jobs:
           docker buildx imagetools inspect localhost:5000/ndefleng:latest
       - name: Database Setup
         run: |
+          docker ps
           docker run localhost:5000/ndefleng:latest bundle exec rake db:create db:schema:load
       - name: Rspec
         run: |
