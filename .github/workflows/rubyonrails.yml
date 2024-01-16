@@ -46,10 +46,10 @@ jobs:
           docker buildx imagetools inspect localhost:5000/ndefleng:latest
       - name: Database Setup
         run: |
-          docker run localhost:3000/ndefleng:latest bundle exec rake db:create db:schema:load
+          docker run localhost:5000/ndefleng:latest bundle exec rake db:create db:schema:load
       - name: Rspec
         run: |
-          docker run localhost:3000/ndefleng:latest bundle exec rspec
+          docker run localhost:5000/ndefleng:latest bundle exec rspec
       - name: Cucumber
         run: |
-          docker run localhost:3000/ndefleng:latest bundle exec rake cucumber
+          docker run localhost:5000/ndefleng:latest bundle exec rake cucumber
