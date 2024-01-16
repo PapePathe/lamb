@@ -6,7 +6,7 @@ one:
       featured: true
       vip: true
     two:
-      surnom: "bruce lee"  
+      surnom: "bruce lee"
       featured: true
     three:
       surnom: "papa sow"
@@ -41,11 +41,11 @@ one:
     twelve:
       surnom: "ndoff"
       featured: false
-      
-      
+
+
 two:
   nom: "pikine mboloo"
-  lutteurs: 
+  lutteurs:
     one:
       surnom: "thieck"
       featured: true
@@ -70,10 +70,10 @@ two:
     nine:
       surnom: "pape diop junior"
       featured: false
-  
+
 three:
   nom: "boul faalé"
-  lutteurs: 
+  lutteurs:
     one:
       surnom: "tyson"
       featured: true
@@ -82,7 +82,7 @@ three:
       surnom: "eumeu séne"
       featured: true
       vip: true
-    three: 
+    three:
       surnom: "gambien"
       featured: true
     four:
@@ -103,11 +103,11 @@ three:
     eight:
       surnom: "farba"
       featured: false
-  
-  
+
+
 four:
   nom: "ndakaaru"
-  lutteurs: 
+  lutteurs:
     one:
       surnom: "yékini"
       featured: true
@@ -121,20 +121,20 @@ four:
     four:
       surnom: "briise de mer"
       featured: true
-  
-  
+
+
 five:
   nom: "soumbedioune"
-  lutteurs: 
+  lutteurs:
     first:
       surnom: "boy kairé"
       featured: true
     second:
       surnom: "cheikhou diéne"
       featured: true
-    one: 
+    one:
       surnom: "bismi ndoye"
-      featured: true    
+      featured: true
     two:
       surnom: "kairé 2"
       featured: true
@@ -153,10 +153,10 @@ five:
     eight:
       surnom: "diene kairé"
       featured: false
-  
+
 six:
   nom: "ecole de lutte balla gaye"
-  lutteurs: 
+  lutteurs:
     one:
       surnom: "balla gaye 2"
       featured: true
@@ -176,18 +176,18 @@ six:
     seven:
       surnom: "double less 2"
       featured: true
-      
-      
+
+
 double_less:
-  nom: "école de lutte double less"      
+  nom: "école de lutte double less"
   lutteurs:
     three:
       surnom: "sa thies"
-    
+
 
 eight:
   nom: "thiaroye sur mer"
-  lutteurs: 
+  lutteurs:
     one:
       surnom: "khadim ndiaye 2"
       featured: true
@@ -200,11 +200,11 @@ eight:
     one:
       surnom: "issa pouye"
       featured: true
-  
-  
+
+
 nine:
   nom: "falaye baldé"
-  lutteurs: 
+  lutteurs:
     one:
       surnom: "ama baldé"
       featured: true
@@ -217,13 +217,13 @@ nine:
     fiur:
       surnom: "géant"
       featured: true
-      
-  
-  
+
+
+
 ten:
   nom: "lansar"
-  lutteurs: 
-    one: 
+  lutteurs:
+    one:
       surnom: "ness"
       featured: true
     two:
@@ -250,15 +250,15 @@ ten:
     nine:
       surnom: "tonerre"
       featured: true
-  
-  
+
+
 eleven:
   nom: "walo"
-  lutteurs: 
-    one: 
+  lutteurs:
+    one:
       surnom: "lac de guiers 2"
       featured: true
-      vip: true 
+      vip: true
     two:
       surnom: "abdou diouf"
       featured: true
@@ -268,21 +268,21 @@ eleven:
     four:
       surnom: "khadim lô"
       featured: true
-    five: 
+    five:
       surnom: "lac de guiers junior"
       featured: true
-      
-  
-  
+
+
+
 twelve:
   nom: "séreer"
   lutteurs: ~
-  
-    
+
+
 thirteen:
   nom: "rock énergie"
-  lutteurs: 
-    one: 
+  lutteurs:
+    one:
       surnom: "modou lo"
       featured: true
       vip: true
@@ -316,21 +316,21 @@ thirteen:
     ten:
       surnom: "yaram guèye"
       featured: false
-    
-  
-  
+
+
+
 fourteen:
   nom: "ecole de lutte birahim ndiaye"
-  lutteurs: 
+  lutteurs:
     one:
       surnom: "saloum saloum"
       featured: true
-  
-  
+
+
 fifteen:
   nom: "baol mboloo"
-  lutteurs: 
-    one: 
+  lutteurs:
+    one:
       surnom: "tapha tine"
       featured: true
       vip: true
@@ -349,10 +349,10 @@ fifteen:
     dix:
       surnom: "Confiance"
       featured: true
-  
+
 eighteen:
   nom: "école de lutte manga 2"
-  lutteurs: 
+  lutteurs:
     one:
       surnom: "paul maurice"
       featured: true
@@ -371,23 +371,23 @@ eighteen:
     six:
       surnom: "Malème Niani"
       fatured: true
-        
-  
+
+
 
 nineteen:
   nom: "hal pulaar"
-  lutteurs: 
+  lutteurs:
     one:
       surnom: "baboye"
       featured: true
-  
+
 twenty_four:
   nom: "Ecole de Lutte Toubabou Dior"
-  
-      
+
+
 twenty_seven:
   nom: "Ecole de Lutte Mor fadam"
-  lutteurs: 
+  lutteurs:
     one:
       surnom: "sa kadior"
       featured: true
@@ -403,24 +403,24 @@ twenty_seven:
     five:
       surnom: "ambulance"
       featured: true
-  
+
 twenty_eight:
   nom: "Ecole de Lutte Lirou Diâne"
   lutteurs: ~
-  
-  
+
+
 twenty_nine:
   nom: "Ecole de Lutte Pape Kâne"
   lutteurs: ~
-  
-  
+
+
 thirty:
   nom: "Ecole de Lutte Lang Sané"
-  lutteurs: 
+  lutteurs:
     one:
       surnom: "lang sané 2"
       featured: true
-  
+
 thirty_one:
   nom: "door dorat"
   lutteurs:
@@ -442,7 +442,7 @@ thirty_one:
     six:
       surnom: "guarga mbossé"
       featured: false
-      
+
 thirty_two:
   nom: "mbour"
   lutteurs:
@@ -478,7 +478,7 @@ thirty_four:
     one:
       surnom: "khadim diallo"
       featured: true
-      
+
 
 
 thirty_five:
@@ -490,7 +490,7 @@ thirty_five:
     two:
       surnom: "do guèye"
       featured: true
-      
+
 thirty_six:
   nom: "force one"
   lutteurs:
@@ -500,9 +500,9 @@ thirty_six:
     two:
       surnom: "papa tine"
       featured: true
-      
-      
-      
+
+
+
 thirty_seven:
   nom: "écurie keur massar mboloo"
   lutteurs:
@@ -515,7 +515,7 @@ thirty_seven:
     three:
       surnom: "necaye tine"
       featured: true
-      
+
 thirty_eight:
    nom: "Pikine De Gaulle"
    lutteurs:
@@ -529,7 +529,7 @@ thirty_nine:
     one:
       surnom: "zale lô"
       featured: true
-    two: 
+    two:
       surnom: "rock mbalax"
       featured: true
 
@@ -560,7 +560,7 @@ fourty_two:
     two:
       surnom: "modou awa"
       featured: true
-      
+
 fourty_two:
   nom: "hlm"
   lutteurs:
@@ -581,7 +581,7 @@ fourty_four:
     one:
       surnom: "modou anta"
       featured: true
- 
+
 fourty_five:
   nom: "école de lutte mansour mbaye"
   lutteurs:
@@ -595,7 +595,7 @@ fourty_six:
     one:
       surnom: "souleye dop"
       featured: true
-      
+
 
 fourty_seven:
   nom: "école de lutte toubabou dior"
