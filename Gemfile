@@ -1,54 +1,36 @@
 source 'http://rubygems.org'
 
-  gem 'rails', '3.2.14'
-  
-  gem 'random_data'
-  
-  gem 'mysql2'
-  gem "activerecord-mysql-adapter"
-  gem 'ffaker'
-  
-  gem 'sorcery'
-  gem "devise", :git => "http://github.com/plataformatec/devise.git"
-
-  gem 'jquery-rails'
-  gem 'jquery-ui-rails'
-
-  gem 'activeadmin'  
-
-  gem 'formtastic'
-  gem 'formtastic-bootstrap'
-
-  gem 'kaminari'
-  
-
-  gem 'rails-i18n'
-  
-group :production do
-  # gem 'pg'    
-end
-
+gem 'rails', '3.2.14'
+gem 'random_data'
+gem 'mysql2'
+gem "activerecord-mysql-adapter"
+gem 'ffaker'
+gem 'sorcery'
+gem "devise", :git => "http://github.com/plataformatec/devise.git"
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
+gem 'activeadmin'
+gem 'formtastic'
+gem 'formtastic-bootstrap'
+gem 'kaminari'
+gem 'rails-i18n'
 gem 'therubyracer'
 
-# Gems used only for assets and not required
-# in production environments by default.
 group :assets do
   gem 'coffee-rails', "~> 3.2.2"
   gem 'sass-rails', "  ~> 3.2.2"
   gem 'uglifier'
   gem 'bootstrap-sass', '2.0.2'
 end
-  
+
 group :test do
   gem 'database_cleaner'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'shoulda-matchers'
   gem 'cucumber-rails', :require => false
-  gem 'capybara'  
-  #`gem 'minitest'
+  gem 'capybara'
   gem "json_spec"
-  # Pretty printed test output
   gem 'turn', :require => false
   gem 'spork', '> 0.9.0.rc'
 end
