@@ -1,0 +1,20 @@
+
+/**
+ * @author: Wa Xarala
+ * @website: xarala.sn  
+ *
+ */
+
+/**
+ * Text Alignment For Columns
+ *
+ */ 
+.align-left {
+  text-align: left;  
+}
+.align-center {
+  text-align: center;  
+}
+.align-right {
+  text-align: right;  
+}

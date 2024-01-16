@@ -1,0 +1,53 @@
+<% content_for :grands_combats do %>
+	<div>
+				
+		<ul id='lutteurs-vips' class="jcarousel-skin-tango">
+			
+			<% @vips.each do |lutteur| %>
+				<li class="lutteur-vip">
+				  
+				  <div class="infos">
+				  	<h2>
+				  		<%= link_to lutteur.surnom, lutteur, :title => lutteur %>
+				  		<em class="ecury"><%= link_to lutteur.ecury, lutteur.ecury, :title => lutteur.ecury %></em>
+				  	</h2>
+				  	<br />
+				  </div>
+				  
+				  <img src="http://placehold.it/190x202&text#{lutteur}" class="thumbnail" />
+				</li>
+			<% end %>
+			
+		</ul>	
+		
+	</div>
+<% end %>
+<br />
+<br />
+<h1 class="page-title-hidden"> Lutte sénégalaise - les lutteurs</h1>
+
+<div class='align-center'><%= paginate @featured %></div>
+<br />
+<% @featured.in_groups_of 4, true do |groups| %>
+	
+	<div class="row">
+		<% groups.each do |lutteur| %>
+			<div class="span4 lutteur-summary">
+				<% if lutteur === true || lutteur === false %>
+					&nbsp;
+				<% else %>					
+					<span class="media-grid">
+						<%= link_to lutteur, :title => lutteur do %>
+							<img src="http://placehold.it/190x202&text#{lutteur}" class="thumbnail" />
+						<% end %>				
+					</span>					
+					<h3><%= link_to lutteur.surnom, lutteur, :title => lutteur  %></h3>
+				<% end %>
+			</div>
+		<% end %>  
+	</div>
+	<hr class="faded" />
+	
+<% end %> 
+
+<div class='align-center'><%= paginate @featured %></div>

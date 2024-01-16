@@ -1,0 +1,621 @@
+one:
+  nom: "fass"
+  lutteurs:
+    one:
+      surnom: "gris bordeaux"
+      featured: true
+      vip: true
+    two:
+      surnom: "bruce lee"  
+      featured: true
+    three:
+      surnom: "papa sow"
+      featured: true
+    four:
+      surnom: "balla diouf"
+      featured: true
+    five:
+      surnom: "lac rose"
+      featured: true
+    six:
+      surnom: "ouza sow"
+      featured: true
+    six:
+      surnom: "forza"
+      featured: true
+    seven:
+      surnom: "batika"
+      featured: false
+    eight:
+      surnom: "tapha guèye 2"
+      featured: false
+    nine:
+      surnom: "maodo"
+      featured: false
+    ten:
+      surnom: "king kong"
+      featured: false
+    eleven:
+      surnom: "Laye Bèye 2"
+      featured: false
+    twelve:
+      surnom: "ndoff"
+      featured: false
+      
+      
+two:
+  nom: "pikine mboloo"
+  lutteurs: 
+    one:
+      surnom: "thieck"
+      featured: true
+    two:
+      surnom: "Yawou Dial"
+      featured: true
+    four:
+      surnom: "niari yards"
+      featured: true
+    five:
+      surnom: "cobra"
+      featured: true
+    six:
+      surnom: "metzo"
+      featured: false
+    seven:
+      surnom: "gora séras"
+      featured: false
+    eight:
+      surnom: "barack obama"
+      featured: false
+    nine:
+      surnom: "pape diop junior"
+      featured: false
+  
+three:
+  nom: "boul faalé"
+  lutteurs: 
+    one:
+      surnom: "tyson"
+      featured: true
+      vip: true
+    two:
+      surnom: "eumeu séne"
+      featured: true
+      vip: true
+    three: 
+      surnom: "gambien"
+      featured: true
+    four:
+      surnom: "aliou mané"
+      featured: true
+    five:
+      surnom: "eumeu séne 2"
+      featured: true
+    six:
+      surnom: "mame balla"
+      featured: false
+    six:
+      surnom: "tyson 2"
+      featured: false
+    seven:
+      surnom: "jordan"
+      featured: false
+    eight:
+      surnom: "farba"
+      featured: false
+  
+  
+four:
+  nom: "ndakaaru"
+  lutteurs: 
+    one:
+      surnom: "yékini"
+      featured: true
+      vip: true
+    two:
+      surnom: "yékini junior"
+      featured: true
+    three:
+      surnom: "malick niang"
+      featured: true
+    four:
+      surnom: "briise de mer"
+      featured: true
+  
+  
+five:
+  nom: "soumbedioune"
+  lutteurs: 
+    first:
+      surnom: "boy kairé"
+      featured: true
+    second:
+      surnom: "cheikhou diéne"
+      featured: true
+    one: 
+      surnom: "bismi ndoye"
+      featured: true    
+    two:
+      surnom: "kairé 2"
+      featured: true
+    three:
+      surnom: "kairé junior"
+      featured: true
+    four:
+      surnom: "etats unis"
+      featured: false
+    six:
+      surnom: "Sing Sing"
+      featured: true
+    seven:
+      surnom: "assane"
+      featured: true
+    eight:
+      surnom: "diene kairé"
+      featured: false
+  
+six:
+  nom: "ecole de lutte balla gaye"
+  lutteurs: 
+    one:
+      surnom: "balla gaye 2"
+      featured: true
+      vip: true
+    two:
+      surnom: "elton"
+      featured: true
+    four:
+      surnom: "sococim"
+      featured: true
+    five:
+      surnom: "niass niass"
+      featured: true
+    six:
+      surnom: "mbiss"
+      featured: true
+    seven:
+      surnom: "double less 2"
+      featured: true
+      
+      
+double_less:
+  nom: "école de lutte double less"      
+  lutteurs:
+    three:
+      surnom: "sa thies"
+    
+
+eight:
+  nom: "thiaroye sur mer"
+  lutteurs: 
+    one:
+      surnom: "khadim ndiaye 2"
+      featured: true
+    two:
+      surnom: "ousmane diop"
+      featured: true
+    three:
+      surnom: "baye mandione"
+      featured: true
+    one:
+      surnom: "issa pouye"
+      featured: true
+  
+  
+nine:
+  nom: "falaye baldé"
+  lutteurs: 
+    one:
+      surnom: "ama baldé"
+      featured: true
+    two:
+      surnom: "balla gaye junior"
+      featured: true
+    three:
+      surnom: "Malaw Seras"
+      featured: true
+    fiur:
+      surnom: "géant"
+      featured: true
+      
+  
+  
+ten:
+  nom: "lansar"
+  lutteurs: 
+    one: 
+      surnom: "ness"
+      featured: true
+    two:
+      surnom: "tidiane faye"
+      featured: true
+    three:
+      surnom: "siteu"
+      featured: true
+    four:
+      surnom: "feugeuleu"
+      featured: true
+    five:
+      surnom: "tigre"
+      featured: true
+    six:
+      surnom: "baye ndiaye"
+      featured: false
+    seven:
+      surnom: "alioune diop 2"
+      featured: true
+    eight:
+      surnom: "super diamono"
+      featured: true
+    nine:
+      surnom: "tonerre"
+      featured: true
+  
+  
+eleven:
+  nom: "walo"
+  lutteurs: 
+    one: 
+      surnom: "lac de guiers 2"
+      featured: true
+      vip: true 
+    two:
+      surnom: "abdou diouf"
+      featured: true
+    three:
+      surnom: "bébé ali"
+      featured: true
+    four:
+      surnom: "khadim lô"
+      featured: true
+    five: 
+      surnom: "lac de guiers junior"
+      featured: true
+      
+  
+  
+twelve:
+  nom: "séreer"
+  lutteurs: ~
+  
+    
+thirteen:
+  nom: "rock énergie"
+  lutteurs: 
+    one: 
+      surnom: "modou lo"
+      featured: true
+      vip: true
+    two:
+      surnom: "zarko"
+      featured: true
+    three:
+      surnom: "modou lo 2"
+      featured: true
+    four:
+      surnom: "bernard thiaw"
+      featured: true
+    five:
+      surnom: "dolph"
+      featured: true
+    six:
+      surnom: "nelson mandela"
+      featured: true
+    seven:
+      surnom: "sakal"
+      featured: false
+    eight:
+      surnom: "mobil 2"
+      featured: false
+    eight:
+      surnom: "Laye Pythagore"
+      featured: false
+    nine:
+      surnom: "baye peulh"
+      featured: false
+    ten:
+      surnom: "yaram guèye"
+      featured: false
+    
+  
+  
+fourteen:
+  nom: "ecole de lutte birahim ndiaye"
+  lutteurs: 
+    one:
+      surnom: "saloum saloum"
+      featured: true
+  
+  
+fifteen:
+  nom: "baol mboloo"
+  lutteurs: 
+    one: 
+      surnom: "tapha tine"
+      featured: true
+      vip: true
+    two:
+      surnom: "birahim 2"
+      featured: true
+    three:
+      surnom: "malien"
+      featured: true
+    four:
+      surnom: "Tapha Leer"
+      featured: true
+    five:
+      surnom: "boy dieye"
+      featured: true
+    dix:
+      surnom: "Confiance"
+      featured: true
+  
+eighteen:
+  nom: "école de lutte manga 2"
+  lutteurs: 
+    one:
+      surnom: "paul maurice"
+      featured: true
+    two:
+      surnom: "dial diop"
+      featured: true
+    three:
+      surnom: "Papis Général"
+      fatured: true
+    four:
+      surnom: "américain"
+      fatured: true
+    five:
+      surnom: "mamadi ndiaye"
+      fatured: true
+    six:
+      surnom: "Malème Niani"
+      fatured: true
+        
+  
+
+nineteen:
+  nom: "hal pulaar"
+  lutteurs: 
+    one:
+      surnom: "baboye"
+      featured: true
+  
+twenty_four:
+  nom: "Ecole de Lutte Toubabou Dior"
+  
+      
+twenty_seven:
+  nom: "Ecole de Lutte Mor fadam"
+  lutteurs: 
+    one:
+      surnom: "sa kadior"
+      featured: true
+    two:
+      surnom: "gouye gui"
+      featured: true
+    three:
+      surnom: "rhone"
+      featured: true
+    four:
+      surnom: "mbaye tine"
+      featured: true
+    five:
+      surnom: "ambulance"
+      featured: true
+  
+twenty_eight:
+  nom: "Ecole de Lutte Lirou Diâne"
+  lutteurs: ~
+  
+  
+twenty_nine:
+  nom: "Ecole de Lutte Pape Kâne"
+  lutteurs: ~
+  
+  
+thirty:
+  nom: "Ecole de Lutte Lang Sané"
+  lutteurs: 
+    one:
+      surnom: "lang sané 2"
+      featured: true
+  
+thirty_one:
+  nom: "door dorat"
+  lutteurs:
+    one:
+      surnom: "zoss"
+      featured: true
+    two:
+      surnom: "Cartouche"
+      featured: true
+    three:
+      surnom: "mbeuss"
+      featured: true
+    four:
+      surnom: "métro"
+      featured: true
+    five:
+      surnom: "Daouda Camara"
+      featured: false
+    six:
+      surnom: "guarga mbossé"
+      featured: false
+      
+thirty_two:
+  nom: "mbour"
+  lutteurs:
+    one:
+      surnom: "bombardier"
+      featured: true
+    two:
+      surnom: "bazooka"
+      featured: true
+
+
+thirty_three:
+  nom: "école de lutte sakou xam xam"
+  lutteurs:
+    one:
+      surnom: "pape mor lo"
+      featured: true
+    two:
+      surnom: "Boursine"
+      featured: true
+    three:
+      surnom: "Tabane"
+      featured: true
+
+
+
+thirty_four:
+  nom: "écurie bathie séras"
+  lutteurs:
+    one:
+      surnom: "dmx"
+      featured: true
+    one:
+      surnom: "khadim diallo"
+      featured: true
+      
+
+
+thirty_five:
+  nom: "lébougui"
+  lutteurs:
+    one:
+      surnom: "amanekh"
+      featured: true
+    two:
+      surnom: "do guèye"
+      featured: true
+      
+thirty_six:
+  nom: "force one"
+  lutteurs:
+    one:
+      surnom: "frazier"
+      featured: true
+    two:
+      surnom: "papa tine"
+      featured: true
+      
+      
+      
+thirty_seven:
+  nom: "écurie keur massar mboloo"
+  lutteurs:
+    one:
+      surnom: "boy séye"
+      featured: true
+    two:
+      surnom: "wu tang"
+      featured: true
+    three:
+      surnom: "necaye tine"
+      featured: true
+      
+thirty_eight:
+   nom: "Pikine De Gaulle"
+   lutteurs:
+     one:
+       surnom: "boy niang 2"
+       featured: true
+
+thirty_nine:
+  nom: "pencum ndakaaru"
+  lutteurs:
+    one:
+      surnom: "zale lô"
+      featured: true
+    two: 
+      surnom: "rock mbalax"
+      featured: true
+
+fourty:
+  nom: "parcelles assainies mboloo"
+  lutteurs:
+    one:
+      surnom: "moussa dioum"
+      featured: true
+    two:
+      surnom: "yanda"
+      featured: true
+
+fourty_one:
+  nom: "texas"
+  lutteurs:
+    one:
+      surnom: "john sina"
+      featured: true
+
+
+fourty_two:
+  nom: "école de lutte boy bambarra"
+  lutteurs:
+    one:
+      surnom: "Delta Niominka"
+      featured: true
+    two:
+      surnom: "modou awa"
+      featured: true
+      
+fourty_two:
+  nom: "hlm"
+  lutteurs:
+    one:
+      surnom: sodida
+      featured: false
+
+fourty_three:
+  nom: "yarakh"
+  lutteurs:
+    one:
+      surnom: "moussa ndoye"
+      featured: true
+
+fourty_four:
+  nom: "thiès"
+  lutteurs:
+    one:
+      surnom: "modou anta"
+      featured: true
+ 
+fourty_five:
+  nom: "école de lutte mansour mbaye"
+  lutteurs:
+    one:
+      surnom: "rouge bordeaux"
+      featured: true
+
+fourty_six:
+  nom: "sine saloum"
+  lutteurs:
+    one:
+      surnom: "souleye dop"
+      featured: true
+      
+
+fourty_seven:
+  nom: "école de lutte toubabou dior"
+  lutteurs:
+    one:
+      surnom: "nar touré"
+      featured: true
+
+
+
+fourty_eight:
+  nom: "école de lutte mbaye guèye"
+  lutteurs:
+    one:
+      surnom: "bouba fitt"
+      featured: true
+
+fourty_nine:
+  nom: "senegambia"
+  lutteurs:
+    one:
+      surnom: "maurice"
+      featured: false

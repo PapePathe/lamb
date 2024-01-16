@@ -1,0 +1,5 @@
+
+.formtastic, .formtastic ul, .formtastic ol, .formtastic li, .formtastic fieldset, .formtastic legend, .formtastic input, .formtastic textarea, .formtastic select, .formtastic p {
+	margin: 0;
+	padding: 0;
+}

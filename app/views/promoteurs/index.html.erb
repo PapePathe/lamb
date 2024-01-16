@@ -1,0 +1,26 @@
+<br />
+<h1 class="page-title">Ndefleng - Promoteurs de lutte</h1>
+<br />
+
+<table class="table table-bordered">
+	
+	<thead>
+		<tr>
+			<th>promoteur</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		
+	<% @promoteurs.each do |promoteur| %>
+		<tr>
+			<td>
+				<h2><%= link_to promoteur.nom, promoteur, :title => promoteur %></h2>		
+			</td>
+		</tr>
+		
+	<% end %>
+		
+	</tbody>
+	
+</table>

@@ -1,0 +1,54 @@
+<div class='line'>
+  <div class='unit size2of5 champion align-center'><h2><%= @combat.champion %></h2></div>
+  <div class="vs unit size1of5 ">contre</div>
+  <div class='unit size2of5 lastUnit challenger align-center'><h2><%= @combat.challenger %></h2></div>
+</div>
+<div class="panel">
+  <h3>Organisateur et Informations</h3>
+  <div class="panel_contents">
+    <div class="attributes_table">
+      <table border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+          <tr>
+            <th>
+              Objet
+            </th>
+            <td>
+              <%= @combat.fightable %>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Date
+            </th>
+            <td>
+              <%= l @combat.occurs_at, :format => :long %>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<% if @combat.verdict_declare? %>
+  <div class="panel">
+    <h3>Verdict</h3>
+    <div class="panel_contents">
+      <div class="attributes_table">
+        <table border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <th>
+                Vainqueur
+              </th>
+              <td>
+                <%= @combat.vainqueur ? @combat.vainqueur : 'match nul' %>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+<% end %>

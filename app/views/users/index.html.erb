@@ -1,0 +1,45 @@
+<div class="reseau-social">
+
+  <div class="line">
+
+    <div class="unit size3of5">
+
+      <h1>Ndefleng</h1>
+      <em>le 1er réseau social de la lutte au sénégal</em>
+    </div>
+
+    <div class="unit size2of5 lastUnit">
+      <div class="promo">
+        <div class="inner">
+          <h2>Amateurs de lutte ?</h2>
+          <p>Restez connecté sur le 1er réseau social de la lutte sénégalaise pour vivre pleinement votre sport préféré.</p>
+          <br />
+          <%= link_to 'connectez vous', new_session_path, class: 'btn primary' %>
+           &nbsp;ou
+          <%= link_to 'inscrivez vous', new_user_path, class: 'btn primary' %>
+          <br />
+          <br />
+          <p>Nous respectons votre vie privée.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+  <div>
+    <br />
+    <ul class="thumbnails">
+      <%- @users.each do |user| %>
+          <li>
+            <%= link_to user, title: user, class: :thumbnail do %>
+                <img src="http://placehold.it/72/64" alt="" />
+            <% end %>
+          </li>
+      <% end  %>
+    </ul>
+  </div>
+
+
+</div>
+<br />
+

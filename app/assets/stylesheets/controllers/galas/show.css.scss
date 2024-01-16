@@ -1,0 +1,80 @@
+/**
+ * 	= require jquery.countdown/jquery.countdown
+ */
+
+
+.promoteur {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-style: italic;
+  text-align: center;
+
+  &:hover {
+    color: red;
+  }
+}
+
+.grand-combat-full {
+
+  text-align: center;
+
+  table {
+    font-size: 11px;
+    text-align: center;
+    
+    td, th {
+      text-align: center;
+      vertical-align: center;
+    }
+    
+  }
+  
+  h3 {
+    text-transform: uppercase;
+    font-size: 2em;
+    
+    a {
+      color: #7A2431;
+    }
+    
+    a:hover {
+      color: #222;
+    }
+    
+  }
+  
+  img.avatar {
+    box-shadow: 1px 1px 11px #000;
+    -webkit-box-shadow: 1px 1px 11px #000;
+    -moz-box-shadow: 1px 1px 11px #000;
+  }
+  
+  img.avatar:hover {
+    opacity: .6;
+  }
+  
+}
+
+
+.combats-secondaires {
+
+  h3 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    color: #7A2431;
+  }
+	
+	.champion {
+		text-align: right;
+	}
+	
+	.challenger {
+		text-align: left;
+	}
+	
+	.separator {
+	   font-size: 2em;
+	}
+	
+}

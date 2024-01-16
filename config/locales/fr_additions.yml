@@ -1,0 +1,6 @@
+fr:
+  time:
+    formats:
+      date_gala: "%d %B %Y à %H:%M"
+      date_combat: "%d %B %Y "
+      date_combat_nice: "<span class='date-combat'> <span class='day'>%d</span> <span class='month'>%b</span> <span class='year'>%Y</span> </span>"

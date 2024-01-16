@@ -1,0 +1,27 @@
+<%= content_for :grands_combats do -%>
+
+<div class="container">
+	<ul id="prochains-combats-promoteur" class="jcarousel-skin-tango fiche_combat">
+		<% @promoteur.galas.incoming.includes([:combats => [:challenger, :champion, :fightable]]).order("occurs_at").each do |gala| %>
+			<li>
+				<%= render :partial => 'galas/fiche_combat', :locals =>  {:combat => gala.combats.grand_combat} %>
+			</li>
+		<% end %>		
+	</ul>
+</div>
+	
+<% end -%>
+
+<div class="promoteur-full-details">
+	<hr	class="faded" />
+	<h1 class="page-title"><%= @promoteur.nom %></h1>
+	<hr	class="faded" />
+</div>
+
+<center class="row">
+	<div class="span6"> <h2>Récents galas </h2> </div>
+	<div class="span6">
+	  <h2>Partenaires</h2> 
+	</div>
+</center>
+

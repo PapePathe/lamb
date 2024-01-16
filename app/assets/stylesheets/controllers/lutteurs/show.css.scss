@@ -1,0 +1,57 @@
+@mixin display-block-text-align-center { display: block; text-align: center; }
+
+/*.date-combat {
+  
+  .day {
+      @include display-block-text-align-center;
+  }
+  
+  .month {
+      @include display-block-text-align-center;
+    
+  }
+  
+  .year {
+      @include display-block-text-align-center;
+    
+  }
+  
+}*/
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin: -10px 0 20px 0;
+  text-align: center;
+}
+
+table  {
+
+  text-transform: lowercase;
+
+  a {
+    &:hover {
+      color: #7A2431;
+    }
+  }
+
+}
+
+.palmares_graphique {
+  height: 200px;
+  width: 200px;
+}
+
+
+/**
+ * Firefox Hack for HighCharts
+ */
+
+.highcharts-container {
+  left: 70px !important;
+}
+@-moz-document url-prefix() {
+  .highcharts-container {
+     overflow: visible !important;
+  }
+}

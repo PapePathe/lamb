@@ -1,0 +1,64 @@
+<article class="grand-combat-full line">
+
+    <br />
+    <div class="unit size2of5">
+        <h3><%= link_to combat.champion, combat.fightable, :title => combat.champion %></h3>
+        <br />
+        <%= link_to  combat.fightable, :title => combat.champion do %>
+            <%= image_tag "http://placehold.it/250x270/222/FDD017/&text=photo",
+                          :alt => combat.champion, :title => combat.champion, :class => 'avatar'  %>
+        <% end %>
+    </div>
+
+    <div class="unit size1of5">
+        <h4><%= l combat.occurs_at, :format => :short %></h4>
+        <br />
+        <table class="table table-bordered">
+            <tbody>
+                <tr>
+                    <td><%= Random.number 80..150 %> Kg</td>
+                    <td>poids</td>
+                    <td><%= Random.number 80..150 %> Kg</td>
+                </tr>
+                <tr>
+                    <td><%= Random.number 169..199 %> Cm</td>
+                    <td>taille</td>
+                    <td><%= Random.number 169..199 %> Cm</td>
+                </tr>
+                <tr>
+                    <td><%= Random.number 19..40 %> Ans</td>
+                    <td>age</td>
+                    <td><%= Random.number 19..40 %> Ans</td>
+                </tr>
+                <tr class="nombre-combats">
+                    <td><%= combats_champion = Random.number 10..40 %></td>
+                    <td style="text-align: center;"><%= image_tag 'ndefleng-small.png', title: 'nombre de combats', alt: 'combats' %></td>
+                    <td><%= combats_challenger = Random.number 18..40 %></td>
+                </tr>
+                <tr>
+                    <td><%= vict_champ = Random.number(combats_champion) %></td>
+                    <td align="center">victoires</td>
+                    <td><%= vict_chall = Random.number(combats_challenger) %></td>
+                </tr>
+                <tr>
+                    <td><%= nuls_champ = Random.number(1..(combats_champion - vict_champ)) %></td>
+                    <td align="center">nuls</td>
+                    <td><%= nuls_chall = Random.number(1..(combats_challenger - vict_chall)) %></td>
+                </tr>
+                <tr>
+                    <td><%= combats_champion - (vict_champ + nuls_champ) %></td>
+                    <td align="center">defaites</td>
+                    <td><%= combats_challenger - (vict_chall + nuls_chall) %></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="unit size2of5 lastUnit">
+        <h3><%= link_to combat.challenger, combat.fightable, :title => combat.challenger %></h3>
+        <br />
+        <%= link_to  combat.fightable, :title => combat.challenger do %>
+            <%= image_tag "http://placehold.it/250x270/222/FDD017/&text=photo",
+                          :alt => combat.challenger, :title => combat.challenger, :class => 'avatar'  %>
+        <% end %>
+    </div>
+</article>

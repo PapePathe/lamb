@@ -1,0 +1,133 @@
+/**
+ * = require jquery.jcaroussel/jquery.jcaroussel
+ * = require kaminari/github
+ */
+
+
+.lutteur-vip {
+
+  background: #222;
+  position: relative;
+  border: 1px solid #000;
+
+
+  .thumbnail {
+    right: -468px;
+    position: relative;
+    top: -56px;
+    
+  }
+  
+  .infos {
+    
+    h2 {
+      margin: 10px 0 0 10px;
+      font-size: 3em;
+      letter-spacing: 1px;
+      font-weight: bold;
+      font-family: 'Orbitron', arial;
+      text-transform: uppercase;
+      
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      a:hover {
+        color: #7A2431;
+      }
+      
+      em.ecury {
+        font-size: 8px;
+        line-height: 8px;
+        padding:0;
+        position: absolute;
+        top:46px;
+        left: 10px;
+      }
+      
+      em.ecury a {
+        color: yellow;
+      }
+      
+    }
+    
+    em {
+      color: yellow;
+      padding: 5px;
+      
+    }
+   
+    
+  }
+
+}
+
+
+.lutteur-summary {
+
+  .image-wrapper {
+    border: 1px solid;
+    padding: 8px;
+  
+  }
+  
+  h3 {
+    text-transform: capitalize;
+    font-family: 'Orbitron';
+    margin-left: 20px;
+    
+    a {
+      color: #222;
+    }
+    
+    a:hover {
+      text-decoration: none;
+      color: #222;
+    }
+    
+  }
+
+  h2 {
+    text-transform: uppercase;
+    font-family: 'Orbitron';
+    font-size: 2em;
+    letter-spacing: 2px;
+    
+    a {
+      color: #222;
+    }
+    
+    a:hover {
+      text-decoration: none;
+      color: #222;
+    }
+    
+    
+  }
+  
+}
+
+
+#featured-lutteurs {
+  
+  h2 {
+  
+    text-align: center;  
+    text-transform: uppercase;
+    margin: 5px 0 0 0;
+    font-family: 'Orbitron';
+    font-size: 1.3em; 
+    
+    a {
+      color: #222;
+    }
+    
+    a:hover {
+      text-decoration: none;
+      color: #222;
+    }
+    
+  }
+  
+}

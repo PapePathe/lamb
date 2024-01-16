@@ -1,0 +1,191 @@
+<br />
+<h1><%= @lutteur %></h1>
+<div class="row full-lutteur-profile">
+	<div class="span8">
+		<table class="table table-bordered">
+		  <tbody>
+		    <tr>
+		      <th>ecurie</th>
+		      <td><b><%= link_to @lutteur.ecury, @lutteur.ecury, :title => @lutteur.ecury %></b></td>
+		    </tr>
+		    <tr>
+		      <th>age</th>
+		      <td>#</td>
+		    </tr>
+		    <tr>
+		      <th>poids</th>
+		      <td>#</td>
+		    </tr>
+		    <tr>
+		      <th>taille</th>
+		      <td>#</td>
+		    </tr>
+		    <tr>
+		      <th>combats</th>
+		      <td><%= @lutteur.combats.count %></td>
+		    </tr>
+		    <tr>
+		      <th>palmares (V-N-D)</th>
+		      <td>
+		        <%= @lutteur.victoires.count %> -  
+		        <%= @lutteur.match_nuls.count %> - 
+		        <%= @lutteur.defaites.count %>  
+		        </td>
+		    </tr>
+		  </tbody>
+		</table>
+
+        <p>ESPACE PUBLICITAIRE</p>
+        <p>POUR LES SPONSORS</p>
+        <p>ET LES ANNONCEURS</p>
+
+      <div class="tabbable">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#victoires"  data-toggle="tab">victoires</a></li>
+            <li><a href="#defaites" data-toggle="tab">défaites</a></li>
+            <li><a href="#nuls" data-toggle="tab">nuls</a></li>
+        </ul>
+          <div class="tab-content">
+            <div id="victoires" class="active tab-pane">
+              <% if @lutteur.victoires.count > 0 %>
+                  <table class="table table-bordered table-condensed">
+                    <thead>
+                    <%= render 'en_tete_combat' %>
+                    </thead>
+                    <tbody>
+                    <%=  render 'combats', :combats => @lutteur.victoires.order('occurs_at DESC') %>
+                    </tbody>
+                  </table>
+              <% else %>
+                  Aucune victoire pout <%= @lutteur %>
+              <% end %>
+            </div>
+            <div id="defaites" class="tab-pane">
+              <% if @lutteur.victoires.count > 0 %>
+                  <table class="table table-bordered table-condensed">
+                    <thead>
+                    <%= render 'en_tete_combat' %>
+                    </thead>
+                    <tbody>
+                    <%=  render 'combats', :combats => @lutteur.defaites.order('occurs_at DESC') %>
+                    </tbody>
+                  </table>
+              <% else %>
+                  Aucune défaite pout <%= @lutteur %>
+              <% end %>
+            </div>
+            <div id="nuls"  class="tab-pane">
+              <% if @lutteur.victoires.count > 0 %>
+                  <table class="table table-bordered table-condensed">
+                    <thead>
+                    <%= render 'en_tete_combat' %>
+                    </thead>
+                    <tbody>
+                    <%=  render 'combats', :combats => @lutteur.match_nuls.order('occurs_at DESC') %>
+                    </tbody>
+                  </table>
+              <% else %>
+                  Aucun match nul pout <%= @lutteur %>
+              <% end %>
+            </div>
+            </div>
+        </div>
+      </div>
+	<div class="span4">
+
+          <ul class='thumbnails'>
+              <li>
+                  <div class="thumbnail">
+
+                    <a href="#" title="<%= @lutteur %>">
+                      <%= image_tag "http://placehold.it/300x220&text=#{@lutteur}", :title => @lutteur, :alt => @lutteur, :class => :lutteur %>
+                    </a>
+
+                    <div class="caption">
+                      <h5><%= @lutteur %></h5>
+
+                      <p><%= Faker::Lorem.paragraphs(2).join(' ')  %></p>
+                    </div>
+                  </div>
+              </li>
+          </ul>
+
+          <ul class="nav nav-tabs">
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </li>
+            <li class="active"><a href="#">palmarès</a></li>
+          </ul>
+          <div class="pill-content">
+            <div id="palmares_graphique" class="active palmares_graphique"></div>
+          </div>
+
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <ul class="nav nav-tabs">
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </li>
+            <li class="active"><a href="#">meilleurs fans</a></li>
+          </ul>
+          <div class="pill-content">
+            <div id="palmares_graphique" class="active palmares_graphique"></div>
+          </div>
+
+	  </span>
+	  
+	</div>
+	
+</div>
+
+<script>
+  jQuery(function () {
+
+  //jQuery('.nav-tabs').tabs();
+
+  chart = new Highcharts.Chart({
+      chart: {
+         renderTo: 'palmares_graphique',
+         plotBackgroundColor: null,
+         plotBorderWidth: null,
+         plotShadow: false,
+         spacingTop: 0,
+         marginTop: 1,
+      },
+      title: {
+         text: ''
+      },
+      tooltip: {
+         formatter: function() {
+            return '<b>'+ this.point.name +'</b>: '+ Math.floor(this.percentage) +' %';
+         }
+      },
+      plotOptions: {
+         pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+               enabled: true,
+               color:  '#000000',
+               connectorColor:  '#000000',
+               distance: -35,
+               formatter: function() {
+                  return '<b>'+ this.point.name +'</b><br />'+ Math.floor(this.percentage) +' %';
+               }
+            }
+         }
+      },
+       series: [{
+         type: 'pie',
+         name: 'palmarès lutteur',
+         data: [
+            ['victoires',   <%= pourcentage_victoires(@lutteur) %>],
+            ['défaites',       <%= pourcentage_defaites(@lutteur) %>],
+            ['nuls',   <%= pourcentage_match_nuls(@lutteur) %>]
+         ]
+      }]
+   });      
+  })
+</script>
+

@@ -1,0 +1,99 @@
+a {
+	color: #444444;
+	text-decoration: none;
+}
+
+a:hover {
+	color: yellow;
+	text-decoration: none;
+}
+
+.topbar div > ul > li.app-logo {
+    text-align: center;
+    width: 220px;
+}
+
+.topbar-clear {
+    margin-top: 60px;
+    margin-bottom: 0;
+}
+
+
+.label {
+  padding-top: 0;
+  font-size: 13px;
+  line-height: 30px;
+  float: none;
+  width: auto;
+  text-align: left;
+  background-color: #fff;
+  color: #000;
+}
+
+form .input {
+    margin-left: 0;
+}
+
+input, textarea, select, .uneditable-input {
+    height: 35px;
+}
+
+:root .alert-message, :root .btn {
+    padding: 10px;
+    margin-left: 7px;
+}
+
+
+footer {
+  background-color: #fff2ce;
+  min-width: 940px;
+  padding: 14px 0;
+  text-shadow: 0 1px 0 #fff;
+  border-top: 1px solid #ccc !important;
+  border-bottom: 1px solid #ccc  !important;
+  -webkit-box-shadow: inset 0 5px 15px rgba(0,0,0,.025);
+  -moz-box-shadow: inset 0 5px 15px rgba(0,0,0,.025);
+  box-shadow: inset 0 5px 15px rgba(0,0,0,.025);
+  margin-bottom: 10px;
+}
+
+.media-grid a {
+  margin: 0 0 0 20px;
+}
+
+.menu-dropdown, .dropdown-menu {
+	padding: 0;	
+}
+
+.menu-dropdown .divider, .dropdown-menu .divider {
+	margin: 0;
+}
+
+.topbar div > ul > li, .nav > li {
+	text-transform: uppercase;
+}
+
+.media-grid a:hover {
+	border: 1px solid #7A2431;
+}
+
+.hero-unit {
+	background-color: #444;
+	color: #FFFFFF;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.pagination a {
+  float: none;
+
+}
+
+.navbar .nav > li > a {
+    padding: 6px 7px 8px;
+}
+
+.formtastic .buttons, .formtastic .actions {
+    padding-left: 0 !important;
+}

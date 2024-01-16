@@ -1,0 +1,37 @@
+<%= semantic_form_for [:admin, @combat] do |c| %>
+
+
+	<%= c.inputs 'Participants et Date' do %>
+	  <%= c.input  :occurs_at %>
+	  <%= c.input  :challenger %>	
+	  <%= c.input  :champion %>	
+	<% end %>
+
+	<%= c.inputs "Ordre d'affichage" do %>
+	  <%= c.input :featured %>	
+	  <%= c.input :grand_combat %>	
+	<% end %>
+		
+	<%= c.inputs 'Type' do %>
+		<%= c.input :fightable_type, :as => :select, :collection => Combat::FIGHTABLES %>
+		<%= c.input :fightable_id, :as => :select, :collection => Gala.all %>	
+	<% end %>
+
+	<%= c.inputs 'Verdict' do %>
+
+       <%= c.input :verdict_declare %>
+
+       <li class="select input optional">
+         <label class=" label" for="combat_vainqueur_id">Vainqueur</label>
+         <select id="combat_vainqueur_id" name="combat[vainqueur_id]">
+           <option value="0">match nul</option>
+           <option value="<%= @combat.champion.id %>"><%= @combat.champion %></option>
+           <option value="<%= @combat.challenger.id %>"><%= @combat.challenger %></option>
+         </select>
+       </li>
+
+	<% end if @combat.persisted? %>
+		
+	<%= c.buttons %>
+	
+<% end %>

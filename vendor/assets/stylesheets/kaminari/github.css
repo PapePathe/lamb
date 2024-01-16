@@ -1,0 +1,32 @@
+.pagination-github {
+  padding:.3em;margin:.3em; 
+  font: 13.34px helvetica,arial,freesans,clean,sans-serif;
+}
+
+.pagination-github a {
+  padding:.3em .3em;margin:.2em;
+  border:1px solid #222;
+  text-decoration:none;
+  color:#222;
+}
+
+.pagination-github a:hover,.pagination-github a:active {
+  background: #222;
+  border:1px solid #444;
+  color:#fff;
+}
+
+.pagination-github span.current {
+  padding:.3em .3em;margin:.2em;
+  border:1px solid #369;
+  font-weight:bold;
+  background-color:#369;
+  color:#FFF;
+}
+
+.pagination-github span.disabled { 
+  padding:.3em .3em;
+  margin:.2em;
+  border:1px solid #222;
+  color:#222;
+}

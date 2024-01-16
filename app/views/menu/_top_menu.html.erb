@@ -1,0 +1,75 @@
+<div class="navbar navbar-fixed-top">
+	
+	<div class="navbar-inner">
+		
+		<div class="container">
+			
+			<section>
+										
+				<div class="row">
+					
+					<div class="span4">
+						<ul class="nav">
+							<li>
+								<a href="/" title='ndefleng - actualité de la lutte sénégalaise'><%= image_tag 'home.png', :title => 'ndefleng - accueil - actualité de la lutte sénégalaise', :alt => 'ndefleng - accueil - actualité de la lutte sénégalaise' %></a>
+							</li>
+							<li>
+								<%= link_to 'ecuries', ecuries_path, :title => 'ndefleng - lutte sénégalaise - les écuries et écoles de lutte' %>
+							</li>
+							<li>
+								<%= link_to "lutteurs", lutteurs_path, :title => 'ndefleng - lutte sénégalaise -  les lutteurs' %>
+							</li>
+							<li>
+								<%= link_to 'promoteurs', promoteurs_path, :title => 'ndefleng - lutte sénégalaise - les promoteurs'  %>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="span4">
+						<div id="logo" title="ndefleng l' actualité de la lutte sénégalaise"></div>
+					</div>
+					
+					<div class="span4">
+						<ul class="nav">
+							<li>
+								<%= link_to 'galas', galas_path, :title => 'ndefleng - lutte sénégalaise - les galas de lutte de la saison'  %>
+							</li>
+							<li>
+								<a href="#">tournois</a>
+							</li>
+							<li>
+								<a href="#">calendrier</a>
+							</li>
+							<li class="dropdown" id="dropdown">
+								<a href="#dropdown" class="dropdown-toggle" title='ndefleng - aconnectez vous'>
+									<%= image_tag 'amateurs.png', :title => 'ndefleng - connectez vous sur ndefleng', :alt => 'ndefleng - connectez vous sur ndefleng' %>
+								</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                      <%= link_to 'réseau social', users_path, :title => 'Bienvenue sur le 1er réseau social de la lutte au sénégal'  %>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <% if current_user %>
+                                          <li><%= current_user.email %></li>
+                                          <li><%= link_to 'deconnexion', deconnexion_path %></li>
+                                    <% else %>
+                                          <li><%= link_to "connexion", new_session_path, :title => 'Connectez sur ndefleng pour suivre la lutte sénégalaise'  %></li>
+                                          <li class="divider"></li>
+                                          <li><%= link_to "inscription", new_user_path, :title => 'Devenez membre sur ndefleng pour suivre la lutte sénégalaise' %></li>
+                                    <% end %>
+                              </ul>
+                            </li>
+						</ul>								
+					</div>
+						
+				</div>
+				
+			</section>					
+				
+		</div>	
+		
+	</div>
+			
+</div>		
+
+<div class="topbar-clear"></div>

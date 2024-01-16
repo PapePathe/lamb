@@ -1,0 +1,48 @@
+<br />
+<% if @gala.occurs_at > Time.now -%>
+ <% if (@gala.occurs_at - Time.now) > 1.month  -%>
+   <% format = "ODHMS" -%>
+  <% else %>    
+   <% format = "DHMS" -%>
+ <% end -%>
+<div class="gala-countdown">
+  <h3 id="gala-countdown"> COMPTE À REBOURS GALA <%= @gala %> </h3>
+  <script type="text/javascript">
+	  jQuery(document).ready(function(){	
+	    var austDay = new Date(<%=@gala.occurs_at.year %>, <%= (@gala.occurs_at.month - 1) %>, <%=@gala.occurs_at.day %>);
+	    jQuery('#gala-countdown').countdown({until: austDay,  format: "<%= format %>"});								  
+	  });
+  </script>
+</div>
+<% end -%>
+
+
+<hr class="faded" />
+	<h1 class="page-title"><%= @gala.nom %></h1>
+	<div class="promoteur">
+		<%= link_to "organisé par #{@gala.promoteur}", @gala.promoteur, :titre => @gala.promoteur, :class => :promoteur %>
+	</div>
+<hr class="faded" />
+
+<div class="gala">
+	
+	<%= render :partial => 'fiche_combat', :locals =>  { :combat => @gala.combats.grand_combat, :view => false } %>
+
+	
+	<hr class="faded" />
+	<div class="combats-secondaires">
+		<% @gala.combats.others.each do |combat| %>
+			<center class="row">
+				<div class="span5 champion"><h3><%= combat.champion %></h3></div>
+				<div class="span2 separator">
+			          <button class="btn">contre</button>
+				</div>
+				<div class="span5 challenger"><h3><%= combat.challenger %></h3></div>
+			</center>
+			<hr class="faded" />
+		<% end %>
+	</div>
+	
+</div>
+
+

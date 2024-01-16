@@ -1,0 +1,17 @@
+<br />
+<section>
+    <%= semantic_form_for :session, :url =>  sessions_path do |f| %>
+
+        <%= f.inputs do %>
+            <%= f.input :email, :input_html => {:name => :email } %>
+            <%= f.input :password, :label => :mot_de_passe, :input_html => {:name => :password } %>
+        <% end %>
+
+
+        <%= f.actions do %>
+            <%= f.action :submit, label: "connexion", :button_html => {:id => :connexion, :value => :connexion, :class => 'btn primary' } %>
+        <% end %>
+
+    <% end %>
+</section>
+

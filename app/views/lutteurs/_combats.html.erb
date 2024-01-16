@@ -1,0 +1,16 @@
+<% combats.each do |combat| %>
+  <tr>
+    <td>
+      <h5>
+        <%= link_to combat.challenger == @lutteur ? combat.champion : combat.challenger, combat.challenger == @lutteur ? combat.champion : combat.challenger, :title => combat%>
+      </h5>
+    </td>
+
+    <td><%= raw l(combat.occurs_at, :format => :date_combat_nice) %></td>  <td><%= link_to combat.fightable, combat.fightable, :title => combat.fightable %></td>
+    <td>
+       <%= link_to 'vidéo du combat', watch_combat_path(combat), :title => "voir la vidéo du combat #{combat}",
+                   :data => {"target" => "#modalWindow",  "toggle" => "modal" }, :remote => true %>
+    </td>
+  </tr>
+<% end -%>
+

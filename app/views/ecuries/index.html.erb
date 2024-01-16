@@ -1,0 +1,32 @@
+<br />
+<h1 class="page-title">écuries de lutte au sénégal</h1>
+<table class="table table-bordered tablesorter">
+	
+	<thead>
+		<tr>
+		  <th>type</th>
+			<th class="green"> nom de l' écurie </th>
+			<th class="yellow"> nombre lutteurs  </th>
+			<th class="red"> année de création </th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<%  @ecuries.each do |ecury| %>
+			<tr>
+			  <td><%= ecury.ecury_type %></td>
+				<td>
+					<h2><%= link_to ecury.nom, ecury %></h2>
+				</td>
+				<td>	
+					<%= ecury.lutteurs_count %>
+				</td>
+				<td>	
+					&nbsp;
+				</td>
+			</tr>
+		<% end %>
+		
+	</tbody>
+	
+</table>
